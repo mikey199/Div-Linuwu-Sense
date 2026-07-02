@@ -517,12 +517,9 @@ static int __init set_force_caps(const struct dmi_system_id *dmi)
 static struct quirk_entry quirk_unknown = {};
 
 static struct quirk_entry quirk_acer_nitro_an517_55 = {
-   .predator_v4 = 1,
    .nitro_v4 = 1,
-   .nitro_sense = 1,
    .four_zone_kb = 1
    .brightness = -1,
-   .turbo = 1,
    .cpu_fans = 1,
    .gpu_fans = 1,
 };
