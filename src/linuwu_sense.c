@@ -517,17 +517,14 @@ static int __init set_force_caps(const struct dmi_system_id *dmi)
 static struct quirk_entry quirk_unknown = {};
 
 static struct quirk_entry quirk_acer_nitro_an517_55 = {
-   .predator_v4 = 1,             // If uses Predator Sense v4
-   .nitro_v4 = 1,                // If uses Nitro Sense v4
-   .nitro_sense = 1,             // If it does'nt support LCD Override and Boot Animation Sound use nitro_sense
-   .four_zone_kb = 1             // If has 4-zone RGB keyboard
-
-   //special quirks (only add these if you know what you are doing and your hardware supports it)
-   .wireless = 0,                // If has special wireless handling
-   .brightness = -1,              // If has brightness control
-   .turbo = 1,                   // If has turbo mode (turbo mode is detected by driver itself, you don't explicitly need to enable it, is only needed in specific scenarios and models)
-   .cpu_fans = 1,                // Number of CPU fans
-   .gpu_fans = 1,                // Number of GPU fans
+   .predator_v4 = 1,
+   .nitro_v4 = 1,
+   .nitro_sense = 1,
+   .four_zone_kb = 1
+   .brightness = -1,
+   .turbo = 1,
+   .cpu_fans = 1,
+   .gpu_fans = 1,
 };
 
 static struct quirk_entry quirk_acer_aspire_1520 = {
